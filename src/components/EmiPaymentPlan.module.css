@@ -1,0 +1,230 @@
+.mainContainer {
+    border-radius: 10px;
+    border: 1px solid var(--border-light-blue, rgba(0, 168, 255, 0.40));
+    background: var(--background-white, #FFF);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.25);
+    padding: 2% 4%;
+    width: 50%;
+    min-height: 400px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.heading {
+    color: #000;
+    font-family: Raleway;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.subSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.subSectionHeading {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.amount {
+    color: rgba(0, 0, 0, 0.90);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+    margin: 0;
+}
+
+.emiTenureContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.tenureSliderContainer {
+    flex-grow: 1;
+}
+
+
+.sliderList {
+    list-style-type: none;
+    display: flex;
+    padding-left: 0;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.sliderList>li {
+    color: #000;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    cursor: pointer;
+}
+
+.subSection2 {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 60px;
+}
+
+.subSection2Isa {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.subSection2>div,
+.subSection2Isa>div {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+
+.emiAmountWrapper {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.emiAmountPerMonth {
+    color: #000;
+    font-family: Roboto;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+.perMonthLabel {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin: 0;
+}
+
+.noteText {
+    color: #000;
+    font-family: Roboto;
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 300;
+    line-height: 26px;
+    text-align: center;
+    margin: 0;
+    margin-top: 50px;
+}
+
+.noteText>span {
+    font-weight: 500;
+}
+
+.notAvailableContainer {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notAvailableContent {
+    border-radius: 10px;
+    background: #F3F3F3;
+    padding: 40px;
+}
+
+.notAvailableContent>h1 {
+    color: #000;
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.notAvailableContent>p {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 34px;
+    margin: 0;
+}
+
+.notAvailableContent span {
+    font-weight: 500;
+}
+
+.salaryInputContainer {
+    display: flex;
+    width: 40%;
+    height: 35px;
+}
+
+.salaryInput {
+    border-radius: 5px 0 0 5px;
+    border: 1px solid var(--border-grey, #CCC);
+    background: var(--background-white, #FFF);
+    width: 80%;
+    flex-grow: 1;
+    outline: none;
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.90);
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+}
+
+
+.rupeeSymbol {
+    margin: 0;
+    border: 1px solid var(--border-grey, #CCC);
+    border-radius: 0 5px 5px 0;
+    border-left: 0;
+    background: var(--background-white, #FFF);
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #F3F3F3;
+    color: rgba(0, 0, 0, 0.50);
+    font-family: Roboto;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}

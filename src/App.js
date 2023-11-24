@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react'
+import './App.css'
+import RegistrationFeeCalculator from './components/RegistrationFeeCalculator'
+import EmiPaymentPlan from './components/EmiPaymentPlan'
+import IsaPaymentPlan from './components/IsaPaymentPlan'
 
-function App() {
+
+
+
+const App = () => {
+  const [programDetails, setProgramDetails] = useState('')
+
+  const updateProgramDetails = (programDetails) => {
+    setProgramDetails(programDetails)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <section className='rootContainer' >
+      <div className='contentContainer'>
+        <RegistrationFeeCalculator
+          updateProgramDetails={updateProgramDetails}
+        />
+        {
+          programDetails &&
+          <div className='plansContainer'>
+            <EmiPaymentPlan
+              programDetails={programDetails}
+            />
+            <IsaPaymentPlan
+              programDetails={programDetails}
+            />
+          </div>
+        }
+      </div>
+    </section>
+  )
 }
 
-export default App;
+export default App
